@@ -1,0 +1,107 @@
+.App {
+    background-color: #0044c0;
+    height: 380px;
+    margin: 0 auto;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+}
+
+.currency-card {
+    margin: 0 auto;
+    max-width: 1000px;
+
+    top: 25%;
+    left: 25px;
+    right: 25px;
+    position: fixed;
+
+    border-radius: 10px;
+    background: linear-gradient(145deg, #fff, #ffffff);
+    box-shadow: -5px 100px 180px -50px #d9d9d9;
+    padding: 50px;
+}
+
+.currency-card form .inputs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.currency-card .input {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-weight: 700;
+}
+
+.currency-card .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.button button {
+    width: 250px;
+    background-color: #0044c0;
+    height: 40px;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.button button:hover {
+    background-color: black;
+}
+
+.button button:active {
+    background-color: black;
+}
+
+.currency-card .results {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 70px;
+    gap: 16px;
+}
+
+.currency-card .loader {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 70px;
+    gap: 16px;
+}
+
+.currency-card input {
+    border: #ced4da solid 1px;
+    font-size: 20;
+    height: 23px;
+    border-radius: 4px;
+    padding: 10px 8px 10px 8px;
+    outline: none;
+    font-weight: 600;
+}
+
+@media screen and (max-width:735px) {
+    .currency-card form .inputs {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .currency-card input {
+        width: 330px;
+    }
+
+    .button button {
+        width: 330px;
+
+    }
+}
